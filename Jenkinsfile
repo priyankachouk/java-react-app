@@ -4,6 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "npm install"
+                sh "npm i react-scripts"
                 sh "npm run build"
             }
         }
