@@ -4,9 +4,9 @@ pipeline {
         stage("Build") {
             steps {
                 sh "whoami"
-                sh "sudo npm install"
-                sh "sudo npm i react-scripts"
-                sh "sudo npm run build"
+                sh "npm install"
+                sh "npm i react-scripts"
+                sh "npm run build"
             }
         }
         stage("Deploy") {
