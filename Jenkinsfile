@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh "whoami"
                 sh "sudo npm install"
-                sh "sudo npm i react-scripts"
+                sh "npm i react-scripts"
                 sh "sudo npm run build"
             }
         }
